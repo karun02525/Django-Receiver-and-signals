@@ -11,8 +11,18 @@ class Page(models.Model):
     user = models.OneToOneField(User,on_delete=models.CASCADE , primary_key=True)
     #user = models.ForeignKey(User,on_delete=models.CASCADE , primary_key=True)
     #user = models.OneToOneField(User,on_delete=models.CASCADE , primary_key=True, limit_choices_to={'is_staff':True})
+    #user = models.OneToOneField(User,on_delete=models.PROTECT , primary_key=True)
     name = models.CharField(max_length=30)
     date = models.DateField()
+
+
+
+
+
+
+
+
+
 
 
 class BaseModel(models.Model):
